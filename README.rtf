@@ -2,7 +2,7 @@ This code was developed in MATLAB R2023b using the Optimisation Toolbox. It was 
 
 Ding Z., Dowling M.R., Wade-Vallance A.K., et. Al. Long-lived IgE plasma cells have limited bone marrow tropism and a unique survival program, Immunity 2025
 
-The master file is \'93optimise_IgEIgG1_BMSL_joint_logfits.m\'94, which includes the raw data for survival of IgE and IgG1 plasma cells in bone marrow and secondary lymphoid tissue. The routine fits 4 models: 1) single-exponential, 2) single-exponential with offset, 3) double-exponential, and 4) steady-state lognormal (Dowling M.R. et al., Proceedings of the Royal Society Interface 2005) to log transformed data using \'93createOptimProblem\'94 with lsqcurvefit and Levenberg-Marquardt algorithm and multiple random starting points (100 per fit), performs bootstrapping to estimate confidence intervals (1000 iterations) and writes and plots the results.\
+The master file is optimise_IgEIgG1_BMSL_joint_logfits.m, which includes the raw data for survival of IgE and IgG1 plasma cells in bone marrow and secondary lymphoid tissue. The routine fits 4 models: 1) single-exponential, 2) single-exponential with offset, 3) double-exponential, and 4) steady-state lognormal (Dowling M.R. et al., Proceedings of the Royal Society Interface 2005) to log transformed data using \'93createOptimProblem\'94 with lsqcurvefit and Levenberg-Marquardt algorithm and multiple random starting points (100 per fit), performs bootstrapping to estimate confidence intervals (1000 iterations) and writes and plots the results.
 
 Please contact the author with any queries:
 
